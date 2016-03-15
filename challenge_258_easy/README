@@ -1,8 +1,9 @@
+Daily Challenge #258 (easy)
+
 Original posting:
 https://www.reddit.com/r/dailyprogrammer/comments/4ad23z/20160314_challenge_258_easy_irc_making_a/
 
-Description
-
+Description:
 A network socket is an endpoint of a connection across a computer network. Today, most communication between computers is based on the Internet Protocol; therefore most network sockets are Internet sockets. Internet Relay Chat (IRC) is a chat system on the Internet. It allows people from around the world to have conversations together, but it can also be used for two people to chat privately.
 Freenode is an IRC network used to discuss peer-directed projects. Their servers are all accessible from the domain names chat.freenode.net and irc.freenode.net. In 2010, it became the largest free and open source software-focused IRC network. In 2013 it became the largest IRC network, encompassing more than 90,000 users and 40,000 channels and gaining almost 5,000 new users per year. We have a channel on freenode ourselves for all things /r/DailyProgrammer on freenode, which is #reddit-dailyprogrammer.
 Your challenge today will be to communicate with the freenode IRC server. This will consist of opening a TCP socket to freenode and sending two protocol messages to initiate the connection. The original IRC RFC defines a message as a line of text up to 512 bytes starting with a message code, followed by one or more space separated parameters, and ending with a CRFL (\r\n). The last paramater can be prefixed by a colon to mark it as a parameter that can contain spaces, which will take up the rest of the line. An example of a colon-prefixed parameter would be the contents of a chat message, as that is something that contains spaces.
